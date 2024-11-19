@@ -1,0 +1,68 @@
+/* Estilos do corpo */
+body {
+    background-color: #2C5F2D; /* Mudança para um tom mais suave de verde */
+    color: white;
+    font-family: "Bai Jamjuree", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ajustei para ocupar toda a altura da tela */
+    margin: 0;
+    padding: 0 15px;
+}
+
+/* Estilo do botão */
+button {
+    background-color: #64A712;
+    color: white;
+    font-family: "Bai Jamjuree", sans-serif;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #4C860E; /* Tom mais escuro no hover */
+    transform: translateY(-3px); /* Pequena elevação no hover */
+}
+
+button:active {
+    transform: translateY(1px); /* Efeito de clique */
+}
+
+/* Estilo das seções com a classe 'passo' */
+.passo {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.passo.ativo {
+    display: block;
+    opacity: 1;
+}
+
+/* Estilo principal do conteúdo */
+main {
+    text-align: center;
+    max-width: 90%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo mais suave para contraste */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Ajuste das imagens */
+img {
+    max-width: 90%;
+    border-radius: 10px; /* Adiciona bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Sombra leve na imagem */
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05); /* Leve aumento no hover */
+}
